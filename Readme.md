@@ -1,5 +1,4 @@
-[![Build and test the esy package](https://github.com/ManasJayanth/esy-texinfo/actions/workflows/workflow.yml/badge.svg)](https://github.com/ManasJayanth/esy-texinfo/actions/workflows/workflow.yml)
-
+[![Build and test the esy package](https://github.com/DiningPhilosophersCo/esy-texinfo/actions/workflows/workflow.yml/badge.svg)](https://github.com/DiningPhilosophersCo/esy-texinfo/actions/workflows/workflow.yml)
 # esy-texinfo
 
 `esy-texinfo` is sample package, [`texinfo`](https://www.gnu.org/software/texinfo), packaged for [`esy`](https://esy.sh/).
