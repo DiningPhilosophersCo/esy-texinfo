@@ -1,0 +1,8 @@
+{
+  "esy": {
+    "build": "which texi2any"
+  },
+  "dependencies": {
+    "esy-texinfo": "*"
+  }
+}

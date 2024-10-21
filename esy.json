@@ -1,0 +1,24 @@
+{
+  "name": "esy-texinfo",
+  "version": "7.1.1000",
+  "description": "texinfo packaged for esy",
+  "source": "https://ftpmirror.gnu.org/texinfo/texinfo-7.1.1.tar.xz#sha256:31ae37e46283529432b61bee1ce01ed0090d599e606fc6a29dca1f77c76a6c82",
+  "override": {
+    "buildEnv": {
+      "PATH": "#{ os == 'windows' ? '/usr/x86_64-w64-mingw32/sys-root/mingw/bin' : '' } #{ : $PATH}"
+    },
+    "exportedEnv": {
+      "PKG_CONFIG_PATH": {
+        "scope": "global",
+        "val": "#{self.lib / 'pkgconfig' : $PKG_CONFIG_PATH }"
+      }
+    },
+    "build": [
+      "./configure --prefix=#{self.install} #{os == 'darwin' ? '--disable-dependency-tracking': ''} #{os == 'windows' ? '--host=x86_64-w64-mingw32': ''}",
+      "make"
+    ],
+    "install": "make install",
+    "buildsInSource": true,
+    "dependencies": {}
+  }
+}
